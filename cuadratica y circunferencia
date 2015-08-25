@@ -1,0 +1,69 @@
+// area de una circunf y ec cuadratica.cpp : Defines the entry point for the console application.
+//autor : alfonso cabrera melgar  25-08-15
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include <iostream>
+#define pi 3.141516
+
+using namespace std;
+
+void fcuadratica (float a,float b, float c, float &x1, float &x2);
+float fcircunfereancia (float r);
+void main()
+
+{ int opcion;
+  do
+  { cout<< "menu\n ";
+    cout<< "1.-area de la circunfereancia\n ";
+	cout<< "2.-soluviones reales de la ecucion cuadratica\n ";
+	cout<< "0.-salir\n ";
+	cout<< "opcion: ";
+	switch(opcion)
+	{
+	case 1:
+		fcircunferencia();
+	case 2:
+		fcuadratica();
+	case 0:
+		cout<<"salir\n";
+		break;
+	default:
+		cout<<"opcion invalida";
+	}
+	getch ();
+	system("cls");
+    }while(opcion)!=0);
+  }
+ void fcircunferencia()
+   {
+	float r
+		a = ((r*r)*pi)/2
+		cout<< "el area es :"<<a; 
+   }
+
+
+
+
+
+	  
+ void fcuadratica()
+{
+	float a,b,c,res1,res2;
+
+		cout<< "ingrese el valor de a ";
+		cin>> a;
+		cout<< "ingrese el valor de b ";
+		cin>> b;
+		cout<< "ingrese el valor de c ";
+		cin>> c;
+
+		if (b*b-4*a*c > 0)
+		{
+			cuadratica (a,b,c,res1,res2);
+			cout<< "la solucion 1 es: "<<res1;
+			cout<< "la solucion 2 es: "<<res2;
+		}
+
+			
